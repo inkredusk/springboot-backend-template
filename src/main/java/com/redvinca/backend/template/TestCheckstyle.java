@@ -8,7 +8,7 @@ public class TestCheckstyle {
         System.out.println("print order usage incorrect");
     }*/
 
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         printOrder();
-    }*/
+    }
 }
