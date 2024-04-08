@@ -1,26 +1,17 @@
 pipeline {
 
     agent any
-
-    triggers {
-      pollSCM('') 
-    }
     
     stages {
-        stage('SCM') {
+        stage('Checkout code') {
             steps {
                 checkout scm
             }
         }
 
-        stage('clean') {
+        stage('Compilation') {
             steps {
-                sh 'mvn clean'
-            }
-        }
-        stage('install') {
-            steps {
-                sh 'mvn clean install'
+                sh './mvnw clean install'
             }
         }
         stage('archive-artifacts') {
