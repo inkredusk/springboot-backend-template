@@ -9,6 +9,6 @@ public class TestCheckstyle {
     }*/
 
     public static void main(String[] args) {
-        printOrder();
+         printOrder();
     }
 }
