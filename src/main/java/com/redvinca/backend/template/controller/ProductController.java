@@ -5,6 +5,8 @@ import javax.validation.Valid;
 // Importing required classes
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import com.redvinca.backend.template.entity.Product;
+import com.redvinca.backend.template.service.ProductService;
  
 // Annotation
 @RestController

@@ -2,6 +2,8 @@ package com.redvinca.backend.template.service;
 
 import java.util.List;
 
+import com.redvinca.backend.template.entity.Product;
+
 public interface ProductService {
  
     // Save operation

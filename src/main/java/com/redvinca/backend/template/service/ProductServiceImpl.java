@@ -5,10 +5,12 @@ import java.util.List;
 import java.util.Objects;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.redvinca.backend.template.entity.Product;
+import com.redvinca.backend.template.repository.ProductRepository;
  
 // Annotation
 @Service
- 
 // Class
 public class ProductServiceImpl
     implements ProductService {
@@ -48,11 +50,11 @@ public class ProductServiceImpl
         }
  
         if (Objects.nonNull(
-                product.getProductAddress())
+                product.getProductType())
             && !"".equalsIgnoreCase(
-                product.getProductAddress())) {
-            productDB.setProductAddress(
-                product.getProductAddress());
+                product.getProductType())) {
+            productDB.setProductType(
+                product.getProductType());
         }
  
         if (Objects.nonNull(product.getProductCode())

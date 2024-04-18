@@ -1,3 +1,5 @@
+package com.redvinca.backend.template;
+
 public class TestCheckstyle {
     
     private static void printOrder() {
