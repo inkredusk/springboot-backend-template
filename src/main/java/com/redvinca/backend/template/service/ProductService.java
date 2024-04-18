@@ -6,7 +6,13 @@ import com.redvinca.backend.template.entity.Product;
 
 public interface ProductService {
  
-    // Save operation
+    /**
+     * This function is used to save a new Product in database.
+     * It will return the saved product.
+     * 
+     * @param product the Product entity to be saved
+     * @return the saved Product entity
+     */
     Product saveProduct(Product product);
  
     // Read operation
