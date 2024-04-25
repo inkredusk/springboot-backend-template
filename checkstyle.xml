@@ -33,7 +33,9 @@
     <module name="TreeWalker">
 
         <!-- Checks for Naming Conventions. -->
-        <module name="ConstantName"/>
+        <module name="ConstantName"> 
+             <message key="name.invalidPattern" value="Constant names should always be in UPPERCASE"/>
+        </module>
         <module name="LocalVariableName"/>
         <module name="MemberName"/>
         <module name="MethodName"> 
