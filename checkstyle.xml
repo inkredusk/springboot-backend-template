@@ -36,7 +36,9 @@
         <module name="ConstantName"/>
         <module name="LocalVariableName"/>
         <module name="MemberName"/>
-        <module name="MethodName"/>
+        <module name="MethodName"> 
+            <message key="name.invalidPattern" value="Method name should follow camelCase convention"/>
+        </module>
         <module name="PackageName"/>
         <module name="ParameterName"/>
         <module name="StaticVariableName"/>
