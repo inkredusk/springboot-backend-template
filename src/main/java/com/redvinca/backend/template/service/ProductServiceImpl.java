@@ -18,12 +18,19 @@ public class ProductServiceImpl
     @Autowired
     private ProductRepository productRepository;
  
-    // Save operation
+    /**
+     * Save operation
+     *
+     * This method is used to save a new product
+     *
+     * @param product the product object
+     * @return the saved product object
+     */
     @Override
-    public Product saveProduct(Product product)
-    {
+    public Product saveProduct(Product product) {
         return productRepository.save(product);
     }
+
  
     // Read operation
     @Override public List<Product> fetchProductList()
