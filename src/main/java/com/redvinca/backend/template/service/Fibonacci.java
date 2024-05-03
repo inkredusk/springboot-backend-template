@@ -22,12 +22,11 @@ public class Fibonacci {
 
     public void checkCondition() {
         int num = 0;
-        if(num > 0) {
+        if (num > 0) {
             System.out.println("greater than zero");
-        }else if(num < 0) {
+        } else if (num < 0) {
             System.out.println("less than zero");
-        }
-        else {
+        } else {
             System.out.println("equal to zero");
         }
     }
